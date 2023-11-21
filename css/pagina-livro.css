@@ -1,0 +1,226 @@
+body {
+    font-family: "Monteserrat", sans-serif;
+}
+
+header {
+    background: #808080;
+    padding: 10px;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 20%;
+    opacity: 1;
+    transition: 400ms;
+}
+
+nav {
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase; /*maiúsculo*/
+    color: #000000;
+    font-weight: bold; /*negrito*/
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.livros {
+    width: 940px
+    
+    padding: 50px 0;
+    
+}
+
+.livros li {
+    display: inline-block;
+    text-align: left;
+    
+    vertical-align: top;
+    
+}
+
+
+
+.livros li:hover {
+    border-color: #C78C19;
+}
+
+.livros li:active {
+    border-color: #088C19;
+}
+
+.livros li:hover h4 {
+    font-size: 35px;
+}
+
+.livros h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.sobreLivraria {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.descricao {
+    font-size: 14px;
+}
+
+
+.livro2 {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+
+.livro3 {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.livro4 {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.livro5 {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.livro6 {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.livro7 {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.livro8 {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.livro9 {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.livro10 {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.livro11 {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+
+
+p {
+    text-align: justify;
+}
+
+footer {
+    background: #000000;
+    padding: 10PX;
+}
+
+
+.copyright {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0;
+
+}
+
+.diferenciais {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.titulo-diferenciais {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.lista-diferenciais {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+     
+}
+
+.imagem-diferenciais {
+    width: 40%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;
+}
+.imagem-diferenciais:hover {
+    opacity: 0.3;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+
+

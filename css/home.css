@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to bottom, #000000,#000000,#ffffff);
+    font-family: sans-serif;
+    width: 100%;
+}
+header {
+    width: auto;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+.logo{
+    scale: 0.8;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+h1{
+    color: white;
+}
+h2{
+    color: rgb(18, 19, 104);
+    font-size: 110%;
+}
+h3{
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+}
+input:focus{
+    outline:none;
+}
+.pesquisa { 
+    background-color:#ffffff;
+    border:solid 1px;
+    border-radius:15px;
+    width:400px;
+}
+#buscar{
+    float:left;
+    background-color:transparent;
+    padding-left:10px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:25px;
+    width:85%; 
+}
+#lupa{
+    justify-content: flex-end;
+    height: 25px;
+    cursor: pointer;
+}
+.icones-nav img{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+}
+.icones-filho:hover{
+    scale: 1.3;
+    filter: brightness(3);
+}
+.carrossel{
+    width: 100%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+}
+.carrossel img{
+    width: 100%;
+    height:100%;
+}
+.caroussel img:first-child {
+    display: block;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px; 
+}
+main {
+    text-align: center;
+    align-items: center;
+}
+.livros {
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 18rem 18rem 18rem 18rem 18rem;
+    justify-content: space-between;
+}
+
+@media (min-width: 1900px){
+    .livros {
+        grid-template-columns: 18rem 18rem 18rem 18rem 18rem 18rem;
+    }
+}
+@media (max-width: 1899px) {
+    .livros {
+        grid-template-columns:18rem 18rem 18rem 18rem;
+    }
+}
+@media (max-width: 1300px) {
+    .livros {
+        grid-template-columns: 18rem 18rem 18rem;
+    }
+}
+@media (max-width: 1000px){
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    header *{
+        justify-content: center;
+        align-items: center;
+        margin: 2;
+    }
+    .caroussel{
+        order: 1;
+    }
+    .pesquisa{
+        width: auto;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        order: 3;
+    }
+    .icones-nav{
+        display: flex;
+        order: 0;
+    }
+    .livros {
+        grid-template-columns: 21rem 21rem;
+    }
+}
+@media (max-width: 740px){
+    .livros {
+        grid-template-columns: 19rem;
+    }
+}
+.livros img{
+    width: auto;
+    height: 200px;
+    border-radius: 2px;
+}
+.info-livros:hover{
+    scale: 1;
+    cursor: pointer;
+}
+.info-livros{
+    padding: 1.2rem;
+    border-radius: 3%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 6px 6px 6px rgb(0, 0, 0, 0.3);
+    scale: 0.8;
+}
+.info-livros *{
+    margin-top: 0.5rem;
+}
+
+footer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background: black;
+    justify-content: space-between;
+}
+footer span{
+    color: rgb(255, 255, 255);
+    cursor: default;
+    margin: 2%;
+}
+.redes img{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+}
+.redes-contato:hover{
+    filter: brightness(1.5);
+}
