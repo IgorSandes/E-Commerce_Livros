@@ -69,6 +69,88 @@ const arrayLivros = [
         preco: "R$ 60,00",
         genero: "Gênero: Desenvolvimento e BD"
     },
+
+    {
+        imagem: "imagens/1984.jpg",
+        link: "sinopses-html/1984.html",
+        titulo: "1984",
+        preco: "R$ 79,00",
+        genero: "Literatura"
+    },
+
+    {
+        imagem: "imagens/a-culpa-e-das-estrelas.jpg",
+        link: "sinopses-html/a-culpa-e-das-estrelas.html",
+        titulo: "A Culpa é das Estrelas",
+        preco: "R$ 32,40",
+        genero: "Literatura"
+    },
+
+    {
+        imagem: "imagens/a-revolucao-dos-bichos.jpg",
+        link: "sinopses-html/a-revolucao-dos-bichos.html",
+        titulo: "A Revolução dos Bichos",
+        preco: "R$ 60,00",
+        genero: "Literatura"
+    },
+
+    {
+        imagem: "imagens/cem-anos-de-solidao.jpg",
+        link: "sinopses-html/cem-anos-de-solidao.html",
+        titulo: "Cem Anos de Solidão",
+        preco: "R$ 66,75",
+        genero: "Literatura"
+    },
+
+    {
+        imagem: "imagens/dom-quixote.jpg",
+        link: "sinopses-html/dom-quixote.html",
+        titulo: "Dom Quixote",
+        preco: "R$ 46,49",
+        genero: "Literatura"
+    },
+
+    {
+        imagem: "imagens/harry-potter-e-a-pedra-filosofal.jpg",
+        link: "sinopses-html/harry-potter-e-a-pedra-filosofal.html",
+        titulo: "Harry Potter e a Pedra Filosofal",
+        preco: "R$ 87,00",
+        genero: "Literatura"
+    },
+
+    {
+        imagem: "imagens/o-apanhador-no-campo.jpg",
+        link: "sinopses-html/o-apanhador-no-campo.html",
+        titulo: "O Apanhador no Campo de Centeio",
+        preco: "R$ 65,00",
+        genero: "Literatura"
+    },
+
+    {
+        imagem: "imagens/o-grande-gatsby.jpg",
+        link: "sinopses-html/o-grande-gatsby.html",
+        titulo: "O Grande Gatsby",
+        preco: "R$ 53,57",
+        genero: "Literatura"
+    },
+
+    {
+        imagem: "imagens/o-pequeno-principe.jpg",
+        link: "sinopses-html/o-pequeno-principe.html",
+        titulo: "O Pequeno Príncipe",
+        preco: "R$ 49,73",
+        genero: "Literatura"
+    },
+
+    {
+        imagem: "imagens/o-senhor-dos-aneis.jpg",
+        link: "sinopses-html/o-senhor-dos-aneis.html",
+        titulo: "O Senhor dos Anéis: A Sociedade do Anel",
+        preco: "R$ 180,00",
+        genero: "Literatura"
+    },
+
+    
   ]
 
   for(let i = 0; i < arrayLivros.length; i++) {

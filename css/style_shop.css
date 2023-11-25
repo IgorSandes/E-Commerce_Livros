@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Rock+Salt&display=swap');
 
 :root {
-  --white: #fff;
+  
   --red: rgb(24, 24, 23);
-  --gray: #959595;
+  --gray: #707070;
   --blue: #2c5158;
+  --white: white;
 }
 
 * {
@@ -19,6 +20,7 @@ body, button, input, textarea {
 
 li {
   list-style-type: none;
+  
 }
 
 a {
@@ -29,13 +31,11 @@ a {
 button {
   cursor: pointer;
 }
-
-
 /* sobre.html */
 /* Header */
 .main-header {
   background-position: 50% 39%;
-  background-color: rgb(24, 24, 23);
+  background: var(--gray);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,16 +47,26 @@ button {
 
 .header-list-container {
   padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 
 .nav-item {
   text-transform: uppercase;
   color: var(--white);
   transition: 0.2s;
+  padding: 0.5em;
+  background-color: black;
+  border-radius: 16%;
 }
 
 .nav-item:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: black;
+  transition: .9s;
+  color: #1756ED;
+  box-shadow: 0 0 25px #1756ED;
 }
 
 hr {
@@ -64,16 +74,17 @@ hr {
 }
 
 .titulu title {
-  color: var(--blue);
+  color: #1756ED;
   /* text-align: center; */
   font-size: 54px;
   
 }
 
-
 /* Main */
 .main-section {
   padding: 40px 0 64px;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg,rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 .container {
@@ -83,18 +94,18 @@ hr {
 }
 
 .section-titulo {
-  font-family: 'Raleway', sans-serif;
+  color: var(--white);
+  font-family: "Rock Salt", cursive;
   font-size: 32px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 24px;
+
 }
-
-
 
 /*  Footer  */
 .main-footer {
-  background: var(--red);
+  background: var(--gray);
   padding: 16px 0;
 }
 
@@ -117,21 +128,43 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative; 
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
 }
 
-.footer-item + .footer-item {
-  margin-left: 16px;
-}
+.list-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #1756ED;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;}
 
-.footer-item img {
-  width: 32px;
-  height: 32px;
-}
+  .list-container:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #1756ED;
+  }
+  
+  .list-container:hover {
+    color: #1756ED;
+    box-shadow: 0 0 5px #1756ED;
+    text-shadow: 0 0 5px #1756ED;
+  }
 
-/* MAIN */
-
-
-/* loja.html */
 
 /* Main */
 .normal-section + .normal-section {
@@ -140,17 +173,32 @@ hr {
 
 .products-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Flex wrap coloca 2 livros por linha, pq a seção tem 600px */
   justify-content: space-between;
   gap: 40px;
-  background-color: #56c5;
-  border-radius: 15px;}
+  background-color: #a8a8a3;
+  border-radius: 15px;
+  border: solid 3.5px black ;
+  box-shadow:  4px 5px 5px black; ;
+}
 
 
 .book-product {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: solid 5px black;
+  padding: 0.3em;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+
+#left{
+  border-left: none;
+}
+#right{
+  border-right: none;
 }
 
 .product-title {
@@ -159,8 +207,10 @@ hr {
 }
 
 .product-imagem {
-  width: 240px; /* Flex wrap coloca 2 livros por linha, pq a seção tem 600px */
-  height: 144px;
+  width: 189px; 
+  height: 124px;
+  box-shadow: 4px 5px 5px black;
+  margin-bottom: 12px;
 }
 
 .produto-preco-container {
@@ -175,6 +225,16 @@ hr {
   margin-right: 12px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+  color: #fff;
+  border: solid 0.8px black;
+  font-size: 12px;
+  background-color: #2c5158;
+  box-shadow: 1px 1px 3px black;
+}
+
+span{
+  padding: 0;
+  font-size: 1.5em;
 }
 
 .button-hover-background {
@@ -184,19 +244,22 @@ hr {
   border-radius: 6px;
   padding: 4px 2px;
   font-weight: bold;
-
   transition: 0.2s;
 }
 
 .button-hover-background:hover {
-  background: transparent;
+  background: var(--white);
   color: var(--red);
+  transition: 0.8s;
 }
 
 /* tabela carrinho de compras */
 .table-carrin {
   width: 100%;
   border-collapse: collapse;
+  border: solid 5px black;
+  box-shadow: 2px 2px 3px 3px #333;
+
 }
 
 .cabess-do-item {
@@ -204,6 +267,7 @@ hr {
   border-bottom: 1px solid var(--gray);
   padding-bottom: 6px;
   text-transform: uppercase;
+  text-shadow: #333 1px 1px 1px;
 }
 
 .second-col,
@@ -213,25 +277,30 @@ hr {
 
 .podruto-carrin td {
   padding: 8px 0;
+  margin: 12px 12px ;
 }
 
 .identificacion-produto {
   display: flex;
   align-items: center;
+
 }
 
 .imagem-prod-carrin {
   width: 120px;
   height: 70px;
+  box-shadow: #333 3px 3px 3px;
 }
 
 .titulo-prod-carrin {
   margin-left: 16px;
   font-size: 18px;
+  text-shadow: #333 1px 1px 1px;
 }
 
 .preco-prod-carrin {
   font-family: "Raleway", sans-serif;
+  text-decoration: overline;
 }
 
 .prod-qtd-input {
@@ -243,19 +312,28 @@ hr {
   background: #eee;
 }
 
+.prod-qtd-input:hover{
+  color: black;
+  transition: .9s;
+  color: #1756ED;
+  box-shadow: 0 0 12px #1756ED;
+}
+
 .button-remover-prod {
-  margin-left: 12px;
+  margin-right: 3px;
   background: rgb(24, 24, 23);
   color: var(--white);
   padding: 10px 8px;
   border: 0;
   border-radius: 6px;
-
+  box-shadow: black 3px 3px 3px;
   transition: filter 0.2s;
 }
 
 .button-remover-prod:hover {
-  filter: brightness(0.8);
+  background-color: #fff;
+  transition: 0.9s;
+  color: black;
 }
 
 .container-sald-devedor {
@@ -272,20 +350,21 @@ hr {
 .botao-comprar {
   display: flex;
   margin: 24px auto 0;
-  background: var(--blue);
-  color: var(--white);
+  background: #333;
+  color: white;
   border: 0;
   border-radius: 6px;
   padding: 16px 20px;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
-
-  transition: filter 0.2s;
+  box-shadow: black 1.5px 1.2px 1.3px;
 }
 
 .botao-comprar:hover {
-  filter: brightness(0.8);
+  transition: .8s;
+  background: rgb(158, 235, 4);
+  box-shadow: olive 3px 3px 3px ;
 }
 
 
@@ -303,17 +382,6 @@ hr {
 
   .schedule-item + .schedule-item {
     margin-top: 12px;
-  }
-
-  .show-date,
-  .show-place {
-    width: 32%;
-    padding: 4px;
-  }
-
-  .show-city {
-    width: 33%;
-    padding: 4px;
   }
 
   .botao-comprar {

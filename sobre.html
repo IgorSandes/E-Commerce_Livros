@@ -6,19 +6,19 @@
         <title>Capítulo Certo</title>
         <link rel="shortcut icon" type="imagex/png" href="imagens/logo.png"> 
         <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet" href="css/style-modal.css">
-        <script src="js/script-modal.js" defer></script>
+        <link rel="stylesheet" href="css/sobre.css">
+
     </head>
     <body>
         <header>
             <div class="logo">
-                <img src="imagens/logo.png" alt="logo" id="logo">
+                <a href="index.html"><img src="imagens/logo.png" alt="logo" id="logo"></a>
                 <span><h1>Capítulo Certo</h1></span>
             </div>
             <div class="pesquisa">
                 <input type="text" id="buscar" name="buscar" placeholder="Buscar..." onkeyup="pesquisar()">
                 <img src="imagens/lupa.png" alt="" id="lupa">
-                <script src="./js/buscar.js" defer>buscar</script>
+                <script src="./js/buscar.js">buscar</script>
             </div>
             <nav>
                 <ul class="icones-nav">
@@ -34,29 +34,28 @@
                 <img src="imagens/slbar1 (3).png" alt="Imagem 3">
             </div>
                 <script src="js/carrossel.js" defer>carrosel</script>    
-            <div class="livros">
-                <script src="js/livros.js" defer>livros</script>   
-            </div>
+                <h1 id ="sobre">Sobre Nós:<h1>
 
-            <div id="modal-container" class="modal-container">
-                <div class="modal">
-                    <button class="fechar" id="fechar">X</button>
-                    <h1>Bem-vindo à nossa Livraria Capítulo Certo</h1>
-                    <img class="sobreLivraria" src="imagens/livro1.png" alt="">
+                    <p class="p-sobre">Somos um empresa produtora de conhecimento em uma  perspectiva única, que combina o projeto editorial com a dimensão da educação e que une diferentes aspectos da vida: Intelectual, cultural, tecnológica, científica e inovadora; oferecendo aos nossos clientes a possibilidade de conhecer o que há de melhor produzido nessas áreas do conhecimento humano nas mais diferentes épocas e lugares do mundo.</p>
+                    
+                    <span>
+                        <p class="p-sobre">Assim, a atuação da empresa se divide em:</p>
+                    </span>
 
-                    <p><strong>Um refúgio para os amantes da leitura e um oásis</strong> para aqueles que buscam o conhecimento e a imaginação.</p>
-        
-                    <p><strong>Nossa livraria é mais do que apenas um lugar</strong> onde os livros se alinham nas prateleiras; é um universo de possibilidades que espera ser explorado.</p>
-        
-                    <span><strong>Visite-nos e permita que as páginas ganhem vida!</strong></span>
-        
-                </div>
-            </div>
-
+                    <div class = "div-sobre p-sobre">
+                            <ul>
+                                <li>Editora - Unidade de Maior Representação</li>
+                                <li>Livraria</li>
+                                <li>Espaço Cultural</li>
+                                <li>Cursos, Palestras</li>
+                                <li>Eventos de alta qualidade e excelência</li>
+                            </ul>
+                    </div>                   
         </main>
         <footer>
             <span>CapítuloCerto©</span>
-            <a href="sobre.html"><span>Sobre</span></a>
+            <a href="index.html"><span>Home</span></a>
+
             <nav>
                 <ul class="redes">
                     <li><a class="redes-contato" href="index.html"><img src="imagens/facebook.png" alt="facebook"></a></li>
