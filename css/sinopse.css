@@ -41,13 +41,6 @@ header {
     text-align: justify;
 }
 
-footer {
-    text-align: center;
-    background-color: #232f3e;
-    color: #fff;
-    padding: 2px;
-}
-
 .button {
     background-color: #f0c14b;
     color: #111;
@@ -61,4 +54,31 @@ footer {
     max-width: 200px;
     float: left;
     margin-right: 20px;
+}
+
+footer {
+    background-color: #232f3e;
+    color: #fff;
+    padding-left: 12%;
+    gap: 25%;
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+}
+
+footer span{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: default;
+    margin: 2%;
+}
+
+.redes img{
+    width: 30px;
+    height: 30px;
+  
+}
+.redes-contato:hover{
+    filter: brightness(1.5);
 }

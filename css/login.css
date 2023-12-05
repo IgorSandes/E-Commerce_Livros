@@ -4,6 +4,7 @@
 html{
 font-family: 'Poppins', 'sans-serif';
 }
+
 body{
     margin: 0;
 }
@@ -29,7 +30,7 @@ body{
     align-items: center; 
     flex-direction: column;
 }
-.left-login, h1 {
+.left-login, .title-login {
     color: #1756ED;
     font-size: 3vw;
     font-weight: 800;
@@ -38,7 +39,7 @@ body{
   color: #fff;
   font-size: 1.0vw;
   font-weight: 400;
-  margin: 0 10px;
+  margin: 0 5px;
   text-align: justify center;
 }
 .right-login{
@@ -228,6 +229,10 @@ body{
     cursor: pointer;
   }
 
+
+
+  
+
 @media only screen and (max-width: 950px) {  
 .card-login{
     width: 85%;
@@ -237,9 +242,9 @@ body{
     .main-login{
         flex-direction: column;
     }
-    .left-login > h1 > p{
+    .left-login > h2 > p{
         display: none;
-    }
+    }    
     .right-login{
         width: 100%;
         height: auto;
@@ -251,4 +256,33 @@ body{
         width: 90%;
     }
     
+}
+@media (max-width: 450px) {
+  .left-login{
+    margin-top: 140px;
+  }
+ 
+  h2 {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+  p{
+    font-size: 10px;
+  } 
+
+.card-login{
+    margin-bottom: 50px;
+}
+}
+
+@media (max-width: 380px) {
+  .left-login{
+    margin-top: 35vh;
+  }
+  h2{
+    padding-top: 50px;
+  }
+.card-login{
+  margin-bottom: 50px;
+}
 }

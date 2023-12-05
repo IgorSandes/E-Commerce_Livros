@@ -42,7 +42,7 @@ Este repositório servirá para armazenar os códigos-fonte utilizados no projet
 
 ## Endereço da aplicação
 
-https://e-commerce-livros-bice.vercel.app/
+https://site
 
 
 ## Projetos utilizados como inspiração
