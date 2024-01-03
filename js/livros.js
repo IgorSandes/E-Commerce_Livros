@@ -182,51 +182,115 @@
 //     div.appendChild(infoL);
 // }
 
-const getLivros = async () => {
-    try {
-      const response = await fetch('http://localhost:3000/livros', {
-        method: "GET",
-        mode: 'no-cors'
-      });
-  
-      if (!response.ok) {
-        console.log(response)
-        throw new Error(`Erro ao obter livros: ${response.status}`);
-      }
-  
-      const livros = await response.json();
-      console.log(livros, 'livros do get');
-      return livros;
-    } catch (err) {
-      console.error(err);
-      throw err; // Propague o erro para que quem chama saiba que algo deu errado.
-    }
-  };
-  getLivros()
-   /* const carregarLivros = async () => {
-    try {
-      const arrayLivros = await getLivros();
-  
-      for (let i = 0; i < arrayLivros.length; i++) {
-        const infoL = document.createElement('div');
-        infoL.setAttribute('class', 'info-livros');
-        infoL.innerHTML =
-          `
+// const getLivros = async () => {
+//   try {
+//     const response = await fetch('http://localhost:3000/livros', {
+//       method: "GET",
+//       mode: 'no-cors'
+//     }).then((res) => res.json());
+//     console.log(response)
+//     if (!response.ok) {
+      
+//       throw new Error(`Erro ao obter livros: ${response.status}`);
+//     }
+
+//     const livros = await response.json();
+//     console.log(livros, 'livros do get');
+//     return livros;
+//   } catch (err) {
+//     console.error(err);
+//     throw err; // Propague o erro para que quem chama saiba que algo deu errado.
+//   }
+// };
+
+async function getLivros () {
+  const response = await fetch('http://localhost:3000/livros')
+  const profileData = await response.json()
+  console.log(profileData)
+  return profileData;
+}
+
+getLivros()
+const carregarLivros = async () => {
+  try {
+    const arrayLivros = await getLivros();
+
+    for (let i = 0; i < arrayLivros.length; i++) {
+      const infoL = document.createElement('div');
+      infoL.setAttribute('class', 'info-livros');
+      infoL.innerHTML =
+        `
             <a href="${arrayLivros[i].link}" target="_self" rel="next"><img src="${arrayLivros[i].imagem}" alt="${arrayLivros[i].titulo}" class="capa-livros"></a>
             <h2>${arrayLivros[i].titulo}</h2>
-            <h3>${arrayLivros[i].preco}</h3>
+            <h3>R$ ${arrayLivros[i].preco}</h3>
             <h3>${arrayLivros[i].genero}</h3>
           `;
-  
-        const div = document.querySelector('.livros');
-        div.appendChild(infoL);
-      }
-    } catch (err) {
-      console.error('Erro ao carregar livros:', err);
+
+      const div = document.querySelector('.livros');
+      div.appendChild(infoL);
     }
-  };
-  
-  carregarLivros(); */
+  } catch (err) {
+    console.error('Erro ao carregar livros:', err);
+  }
+};
+
+carregarLivros();
+
+
+// const getLivros = async () => {
+//   try {
+//     const response = await fetch('http://localhost:3000/livros');
+    
+//     if (!response.ok) {
+//       console.log(response);
+//       throw new Error(`Erro ao obter livros: ${response.status}`);
+//     }
+
+//     const livros = await response.json();
+//     console.log(livros, 'livros do get');
+//     return livros;
+//   } catch (err) {
+//     console.error(err);
+//     throw err;
+//   }
+// };
+
+// const carregarLivros = async () => {
+//   try {
+//     const arrayLivros = await getLivros();
+
+//     for (let i = 0; i < arrayLivros.length; i++) {
+//       const infoL = document.createElement('div');
+//       infoL.setAttribute('class', 'info-livros');
+//       infoL.innerHTML =
+//         `
+//             <a href="${arrayLivros[i].link}" target="_self" rel="next"><img src="${arrayLivros[i].imagem}" alt="${arrayLivros[i].titulo}" class="capa-livros"></a>
+//             <h2>${arrayLivros[i].titulo}</h2>
+//             <h3>${arrayLivros[i].preco}</h3>
+//             <h3>${arrayLivros[i].genero}</h3>
+//           `;
+
+//       const div = document.querySelector('.livros');
+//       div.appendChild(infoL);
+//     }
+//   } catch (err) {
+//     console.error('Erro ao carregar livros:', err);
+//   }
+// };
+
+// const fetchAndLoadLivros = async () => {
+//   try {
+//     const profileData = await fetchProfileData();
+//     await carregarLivros(profileData);
+//   } catch (err) {
+//     console.error('Erro ao buscar e carregar livros:', err);
+//   }
+// };
+
+// fetchAndLoadLivros();
+
+
+
 /*  const arrayLivros = async() => {
     const livros = await getLivros()
     return livros
@@ -246,4 +310,3 @@ const getLivros = async () => {
     const div = document.querySelector('.livros');
     div.appendChild(infoL);
   } */
-  
