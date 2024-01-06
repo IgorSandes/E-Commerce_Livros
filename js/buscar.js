@@ -1,6 +1,6 @@
 function pesquisar(){
 
-    const busca = document.getElementById("buscar").value
+    const busca = document.getElementById("buscar").value.toLowerCase()
     let livro = [...document.getElementsByClassName('info-livros')]
     console.log(busca)
     for(i = 0; i < livro.length; i++){
