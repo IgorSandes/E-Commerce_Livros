@@ -157,6 +157,8 @@ main {
     }
     .livros {
         grid-template-columns: 19rem;
+        padding: 0;
+        justify-content: center;
     }
 }
 .livros img{
