@@ -17,7 +17,7 @@ const carregarLivros = async () => {
         `
             <a href="${arrayLivros[i].link}" target="_self" rel="next"><img src="${arrayLivros[i].imagem}" alt="${arrayLivros[i].titulo}" class="capa-livros"></a>
             <h2>${arrayLivros[i].titulo}</h2>
-            <h3>R$ ${arrayLivros[i].preco}</h3>
+            <h3 class= "preco">R$ ${arrayLivros[i].preco}</h3>
             <h3>${arrayLivros[i].genero}</h3>
           `;
 
@@ -30,3 +30,7 @@ const carregarLivros = async () => {
 };
 
 carregarLivros();
+
+//<div class="itens-compra">
+//<i class="adicionar-carrinho"><img src="imagens/sacola.png" alt="Adicionar ao Carrinho"></i>
+//</div>
