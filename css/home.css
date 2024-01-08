@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 body{
     background: linear-gradient(to bottom, #000000,#000000,#ffffff);
@@ -18,13 +19,13 @@ header {
     position: fixed;
     z-index: 1000;
 }
-.logo{
+.logo a{
     scale: 0.8;
     align-items: center;
     display: flex;
     cursor: pointer;
 }
-h1{
+a h1{
     color: white;
 }
 h2{
@@ -201,10 +202,17 @@ footer {
     background: black;
     justify-content: space-between;
 }
-footer span{
+footer span {
     color: rgb(255, 255, 255);
     cursor: default;
     margin: 2%;
+}
+
+footer a span{
+    cursor: pointer;
+}
+footer a span:hover{
+    color: blue;
 }
 .redes img{
     width: 30px;

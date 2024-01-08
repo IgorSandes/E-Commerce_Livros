@@ -33,7 +33,7 @@ button {
 }
 /* sobre.html */
 /* Header */
-.main-header {
+/* .main-header {
   background-position: 50% 39%;
   background: var(--gray);
   display: flex;
@@ -67,6 +67,26 @@ button {
   transition: .9s;
   color: #1756ED;
   box-shadow: 0 0 25px #1756ED;
+} */
+
+.cabecalho {
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  z-index: 1000;
+  color: white;
+}
+.logo, a{
+  font-family: sans-serif;
+  scale: 0.8;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
 }
 
 hr {
@@ -79,8 +99,14 @@ hr {
   font-size: 54px;
   
 }
+body{
+  background-color: black;
+}
 
 /* Main */
+main{
+  margin-top: 3rem;
+}
 .main-section {
   padding: 40px 0 64px;
   background: rgb(255,255,255);
@@ -95,7 +121,7 @@ hr {
 
 .section-titulo {
   color: var(--white);
-  font-family: "Rock Salt", cursive;
+  font-family: sans-serif;
   font-size: 32px;
   text-align: center;
   text-transform: uppercase;
@@ -120,7 +146,7 @@ hr {
 }
 
 .title {
-  font-family: "Rock Salt", cursive;
+  font-family: sans-serif;
   color: var(--white);
 }
 
@@ -176,9 +202,9 @@ hr {
   flex-wrap: wrap; /* Flex wrap coloca 2 livros por linha, pq a seção tem 600px */
   justify-content: space-between;
   gap: 40px;
-  background-color: #a8a8a3;
+  background-color: #00000000;
   border-radius: 15px;
-  border: solid 3.5px black ;
+  border: solid 2px black ;
   box-shadow:  4px 5px 5px black; ;
 }
 
@@ -187,7 +213,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 5px black;
+  border: solid 1px rgb(255, 255, 255);
   padding: 0.3em;
   margin-top: 12px;
   margin-bottom: 12px;
@@ -257,7 +283,7 @@ span{
 .table-carrin {
   width: 100%;
   border-collapse: collapse;
-  border: solid 5px black;
+  border: solid 1px black;
   box-shadow: 2px 2px 3px 3px #333;
 
 }
@@ -350,7 +376,7 @@ span{
 .botao-comprar {
   display: flex;
   margin: 24px auto 0;
-  background: #333;
+  background: #000000;
   color: white;
   border: 0;
   border-radius: 6px;
@@ -363,8 +389,8 @@ span{
 
 .botao-comprar:hover {
   transition: .8s;
-  background: rgb(158, 235, 4);
-  box-shadow: olive 3px 3px 3px ;
+  background: blue;
+  box-shadow: rgb(4, 114, 248) 3px 3px 3px ;
 }
 
 
