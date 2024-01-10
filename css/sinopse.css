@@ -52,7 +52,7 @@ header {
 }
 
 .button {
-    background-color: #f0c14b;
+    background-color: #ADD8E6;
     color: #111;
     border: none;
     padding: 10px 20px;
@@ -97,7 +97,7 @@ footer span{
 }
 
 .bthover:hover{
-    filter: brightness(1.5);
+    filter: brightness(1.2);
 }
 
 /* Estilos para telas menores (como smartphones) */
