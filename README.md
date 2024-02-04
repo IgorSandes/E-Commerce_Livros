@@ -42,7 +42,7 @@ Este repositório servirá para armazenar os códigos-fonte utilizados no projet
 
 ## Endereço da aplicação
 
-https://ecommerce-theta-coral-77.vercel.app/
+https://e-commerce-beryl-three-62.vercel.app
 
 
 ## Projetos utilizados como inspiração
